@@ -1,0 +1,39 @@
+:root {
+   --fundo: linear-gradient(to top, #87ceeb 0%, #e0f7fa 100%); /* Degradê vertical do azul claro para um tom mais suave */
+   --cor--3: #02a8cc;           /* Cor principal (Sólida) */
+   --cor--4: rgba(2, 168, 204, 0.5); /* Principal com 50% de opacidade */
+   --cor--5: #018ba9;           /* Tom mais escuro para estados ativos/hover */
+   --cor--6: rgba(1, 139, 169, 0.3); /* Tom escuro com 30% de opacidade */
+   --texto:  #000000;
+   --cor--7: #02c2eb;
+   --fundoGeral: #ffff;
+   
+}
+
+body.dark-mode {
+    /* MODO ESCURO (Sua paleta específica) */
+    --fundo: linear-gradient(to top, #1e3c72 0%, rgb(31, 43, 65) 1%, #2a5298 100%); /* --cor--FundoEscuro */
+    --cor--3: #00d7ff;
+    --cor--4: rgba(0, 215, 255, 0.5); 
+    --cor--5: #70eaff; 
+    --cor--6: rgba(30, 60, 114, 0.4); 
+    --texto:  #ffffff;
+    --cor--7: #b3f2ff; 
+    --fundoGeral: #1f2b41;
+}
+
+/* Corpo da página: centraliza o conteúdo e aplica o fundo degradê. */
+body {
+    display: flex; /* usa flexbox para centralizar o conteúdo */
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; /* centraliza verticalmente */
+    min-height: 100vh; /* garante que o body ocupe toda a altura da janela */
+    background-size: cover; /* faz o fundo cobrir toda a área disponível */
+    background-position: center; /* centraliza a imagem/degradê de fundo */
+    background: var(--cor--3); /* cor base caso o gradiente não carregue */
+    background: var(--fundo); /* degradê vertical */
+    padding: 20px; /* espaço entre a borda da janela e o conteúdo */
+    background-attachment: fixed;
+
+    transition: background 0.4s ease; /* transição suave para mudanças de fundo */
+}

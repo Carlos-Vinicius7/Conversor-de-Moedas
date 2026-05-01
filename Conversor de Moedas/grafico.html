@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/pages/Grafico/grafico.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="assets/css/pages/ModoEscuro/ModoEscuroG.css">
+
+    <title>Document</title>
+</head>
+<body>
+  <div class="geral">
+
+    <div class="TemaEscuro">
+       <button id="TrocaDeTema">
+          <i class='bx bxs-moon' id="IconeTrocaDeTema"></i>
+          <i class='bx bxs-sun' id="IconeTrocaDeTema2"></i>
+       </button>
+    </div>
+
+    <div class="header">
+
+      <h3>Grafico de Câmbio</h3>
+
+      <a href="../index.html" class="fechar">
+        <i class='bx bx-left-arrow-alt bx-md'></i>
+      </a>
+      
+    </div>
+
+     <div id="Grafico" class="Grafico">
+      <canvas id="myChart"></canvas>
+     </div>
+    
+
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="assets/javascript/pages/Grafico/grafico.js"></script>
+
+<script src="assets/javascript/pages/ModoEscuro/ModoEscuro.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+
+/* Aplica redefinição básica a todos os elementos. */
+* {
+    margin: 0; /* remove margem padrão do navegador */
+    padding: 0; /* remove padding padrão do navegador */
+    box-sizing: border-box; /* calcula largura/altura incluindo bordas e padding */
+    font-family: "Poppins", sans-serif; /* fonte padrão para todo o site */
+    transition: background 0.6s ease-in-out, background-color 0.6s ease-in-out, color 0.5s ease, border-color 0.5s ease; /* transições suaves para mudanças de tema */
+}

@@ -1,0 +1,65 @@
+/* BOTÃO DE TROCA E ÍCONES */
+#TrocaDeTema {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: var(--cor--3);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    /* ALTERAÇÃO: Sombra interna (inset) para dar profundidade ao botão */
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), 
+                inset -2px -2px 5px rgba(255, 255, 255, 0.1);
+    
+    transition: 0.5s ease;
+}
+
+#IconeTrocaDeTema, #IconeTrocaDeTema2 {
+    position: absolute;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
+    color: white;
+    font-size: 1.6rem; /* Tamanho dos ícones */
+}
+
+/* Lógica de visibilidade dos ícones */
+#IconeTrocaDeTema2 { opacity: 0; transform: rotate(90deg); } /* Sol começa oculto */
+
+body.dark-mode #IconeTrocaDeTema { 
+    opacity: 0; 
+    transform: rotate(-90deg); 
+}
+body.dark-mode #IconeTrocaDeTema2 { 
+    opacity: 1; 
+    transform: rotate(0deg); 
+    color: #ffdb58; 
+}
+
+/* No Modo Claro: Mostra a Lua, Esconde o Sol */
+#IconeTrocaDeTema { 
+    display: block; 
+    color: white; /* Ou a cor que preferir */
+}
+#IconeTrocaDeTema2 { 
+    display: none; 
+}
+
+/* No Modo Escuro (body.dark-mode): Esconde a Lua, Mostra o Sol */
+body.dark-mode #IconeTrocaDeTema { 
+    display: none; 
+}
+body.dark-mode #IconeTrocaDeTema2 { 
+    display: block; 
+    color: #fff; /* Cor amarelada para o Sol */
+}
+
+.TemaEscuro {
+    position: absolute;
+    top: 15px;    /* Distância do topo */
+    right: 15px;  /* Distância da direita */
+}

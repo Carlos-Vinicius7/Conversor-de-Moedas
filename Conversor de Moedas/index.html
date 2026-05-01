@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/pages/Index/style.css">
+    <link rel="stylesheet" href="assets/css/pages/ModoEscuro/ModoEscuro.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Conversor de Cambio</title>
+</head>
+<body>
+    <div class="quadro_geral">
+
+        <div class="TemaEscuro">
+           <button id="TrocaDeTema">
+
+              <i class='bx bxs-moon' id="IconeTrocaDeTema"></i>
+
+              <i class='bx bxs-sun' id="IconeTrocaDeTema2"></i>
+
+           </button>
+        </div>
+
+        <h1>Conversor de Câmbio</h1>
+
+        <form class="formulario" id="Form">
+
+        <div class="valor_inicial">
+
+            <div class="valor">
+
+                <label for="valor">Valor:</label>
+                <input type="number" id="valor" placeholder="Digite o valor" step="0.01" required>
+
+            </div>
+
+            <div class="moeda_origem">
+
+                <label for="moeda_origem">Moeda I:</label>
+
+                <select id="moeda_origem" required>
+
+                    <option value="">Selecione moeda de origem</option>
+                    <option value="BRL">Real Brasileiro (BRL)</option>
+                    <option value="USD">Dólar Americano (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                    <option value="GBP">Libra Esterlina (GBP)</option>
+                    <option value="JPY">Iene Japonês (JPY)</option>
+                    <option value="ARS">Peso Argentino (ARS)</option>
+                    <option value="CAD">Dólar Canadense (CAD)</option>
+                    <option value="AUD">Dólar Australiano (AUD)</option>
+                    <option value="CHF">Franco Suíço (CHF)</option>
+                    <option value="BTC">Bitcoin (BTC)</option>
+                </select>
+
+            </div>
+
+        </div>
+
+        <div class="valor_final">
+            
+            <div class="valor_f">
+
+                <label for="valor_f">Valor Convertido:</label>
+                <input type="text" readonly id="valor_f" placeholder="Valor convertido">
+
+            </div>
+
+            <div class="moeda_conertida">
+
+                <label for="moeda_conertida">Moeda II:</label>
+
+                <select id="moeda_conertida" required>
+
+                    <option value="">Selecione moeda de destino</option>
+                    <option value="BRL">Real Brasileiro (BRL)</option>
+                    <option value="USD">Dólar Americano (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                    <option value="GBP">Libra Esterlina (GBP)</option>
+                    <option value="JPY">Iene Japonês (JPY)</option>
+                    <option value="ARS">Peso Argentino (ARS)</option>
+                    <option value="CAD">Dólar Canadense (CAD)</option>
+                    <option value="AUD">Dólar Australiano (AUD)</option>
+                    <option value="CHF">Franco Suíço (CHF)</option>
+                    <option value="BTC">Bitcoin (BTC)</option>
+                </select>
+
+            </div>
+
+        </div>
+
+        <button class="botao_converter" type="submit" id="converter">
+         Converter
+        </button>
+        </form>
+        
+        <div class="carregando">
+            <div class="buscar"></div>
+            <p>Convertendo...</p>
+        </div>
+
+        <div class="resultado"></div>
+
+        <div class="ERRO"></div>
+
+        <div class="informacoes">
+            <a href="grafico.html">Taxas em tempo real</a>
+        </div>
+    </div>
+
+</body>
+
+<script src="assets/javascript/pages/Index/script.js"></script>
+
+<script src="assets/javascript/pages/ModoEscuro/ModoEscuro.js"></script>
+
+</html>

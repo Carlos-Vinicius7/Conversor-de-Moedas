@@ -1,0 +1,193 @@
+@import url(../../global/Global.css);
+
+/* Container principal do formulário de conversão. */
+.quadro_geral {
+    background-color: var(--fundoGeral); /* fundo branco para destacar conteúdo */
+    border-radius: 20px; /* cantos arredondados */
+    padding: 40px; /* espaço interno ao redor dos elementos */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; /* sombra suave para profundidade */
+    width: 100%; /* ocupa toda largura disponível do elemento pai */
+    max-width: 500px; /* largura máxima do card */
+    text-align: center; /* centraliza texto e elementos inline */
+}
+
+/* Título do formulário com espaçamento inferior. */
+h1 {
+    margin-bottom: 30px; /* separa o título do restante do conteúdo */
+    font-size: 1.8rem; /* tamanho maior para destaque */
+    color: var(--texto); /* cor do texto definida pela variável de tema */
+}
+
+/* Formulário vertical com espaçamento entre campos. */
+.formulario {
+    display: flex;
+    flex-direction: column; /* empilha campos verticalmente */
+    gap: 20px; /* espaço uniforme entre os filhos */
+}
+
+/* Linha que contém valor e moeda de origem. */
+.valor_inicial {
+    display: flex; /* exibe os itens em linha */
+    gap: 15px; /* espaço entre os campos */
+    align-items: end; /* alinha o conteúdo na parte inferior do container */
+}
+
+/* Campo de valor ocupa duas partes do espaço disponível. */
+.valor {
+    flex: 2; /* cresce duas vezes mais que a moeda de origem */
+}
+
+/* Campo da moeda de origem ocupa uma parte do espaço disponível. */
+.moeda_origem {
+    flex: 1; /* ocupa menos espaço do que o campo de valor */
+}
+
+/* Estiliza campos de entrada e selects. */
+input, select {
+    width: 100%; /* ocupa a largura total do pai */
+    padding: 10px; /* espaço interno para conforto no uso */
+    border: 2px solid #bebbbb; /* borda cinza suave */
+    border-radius: 12px; /* cantos arredondados */
+    background-color: #efefef; /* fundo cinza claro */
+    font-size: 12px; /* tamanho do texto dentro dos campos */
+    transition: all 0.3s ease; /* animação suave nas alterações de estilo */
+}
+
+/* Linha que contém valor final e moeda convertida. */
+.valor_final {
+    display: flex; /* exibe os itens em linha */
+    gap: 15px; /* espaço entre os campos */
+    align-items: end; /* alinha os itens pela borda inferior */
+}
+
+/* Campo de valor final ocupa duas partes do espaço disponível. */
+.valor_f {
+    flex: 2; /* cresce mais que a moeda convertida */
+}
+
+/* Campo da moeda convertida ocupa uma parte do espaço disponível. */
+.moeda_conertida {
+    flex: 1; /* ocupa menos espaço */
+}
+
+/* Estilos ao focar em um campo input ou select. */
+input:focus, select:focus {
+    outline: none; /* remove a borda de foco padrão do navegador */
+    border-color: var(--cor--3); /* muda a borda para a cor do tema */
+    box-shadow: 0 0 5px var(--cor--4); /* brilho suave ao redor */
+    transform: translateY(-2px); /* eleva levemente o campo quando focado */
+}
+
+/* Estilo para todos os labels de formulário. */
+label {
+    display: block; /* faz o label ocupar linha completa */
+    margin-bottom: 8px; /* cria distância entre label e campo */
+    font-weight: 600; /* deixa o texto mais forte */
+    text-align: left; /* alinha o texto à esquerda */
+    color: var(--texto); /* cor do texto definida pela variável de tema */
+}
+
+/* Botão de converter com estilo visual e interação. */
+.botao_converter {
+    padding: 15px 30px; /* espaçamento interno maior */
+    background-color: var(--cor--3); /* cor de fundo principal */
+    color: #fff; /* texto branco */
+    border: none; /* remove borda padrão */
+    border-radius: 15px; /* cantos arredondados */
+    font-size: 1rem; /* tamanho de fonte confortável */
+    cursor: pointer; /* muda o cursor para indicar clicável */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* anima mudanças de cor e posição */
+    font-weight: 600; /* texto em negrito */
+    margin-top: 10px; /* espaço acima do botão */
+}
+
+/* Efeito hover do botão: muda cor e eleva o botão. */
+.botao_converter:hover {
+    background-color: var(--cor--5); /* tonalidade mais escura ao passar o mouse */
+    transform: translateY(-2px); /* levanta o botão levemente */
+    box-shadow: 0 4px 15px var(--cor--6); /* sombra extra no hover */
+}
+
+/* Indicador de carregamento, inicialmente escondido. */
+.carregando {
+    margin: 20px; /* espaço ao redor do elemento */
+    display: none; /* escondido por padrão */
+}
+
+p{
+    color: var(--texto)
+}
+
+/* Estilo do círculo de busca/loader. */
+.buscar {
+    border-top: 3px solid var(--cor--7); /* borda superior colorida para o spinner */
+    border: 3px solid #bebbbb #02c2eb; /* esta linha parece ter erro de digitação */
+    border-radius: 50%; /* deixa o elemento redondo */
+    height: 30px; /* altura fixa */
+    width: 30px; /* largura fixa */
+    margin: 0 auto; /* centraliza horizontalmente */
+    animation: girar 1s linear infinite; /* animação de rotação contínua */
+}
+
+/* Definição da animação de rotação. */
+@keyframes girar {
+    0% {
+        transform: rotate(0deg); /* começa sem rotação */
+    }
+    100% {
+        transform: rotate(360deg); /* termina uma volta completa */
+    }
+}
+
+/* Texto adicional de informações abaixo do formulário. */
+.informacoes {
+    margin-top: 20px; /* espaço acima do texto */
+    font-size: 12px; /* texto pequeno */
+    color: var(--texto); /* cor do texto definida pela variável de tema */
+}
+
+/* Remove sublinhado de links e define cor e peso. */
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--texto); /* cor do link definida pela variável de tema */
+}
+
+/* Painel de resultado exibido após a conversão. */
+.resultado {
+    margin-top: 30px; /* distância do conteúdo acima */
+    font-size: 1.1rem; /* tamanho de fonte maior para destaque */
+    font-weight: 600; /* texto mais forte */
+    background: var(--cor--3); /* fundo azul */
+    box-shadow: var(--cor--4) 0px 4px 15px; /* sombra suave */
+    color: #fff; /* texto branco */
+    padding: 20px; /* espaço interno do bloco */
+    border-radius: 15px; /* cantos arredondados */
+    display: none; /* fica escondido até ser mostrado via JS */
+}
+
+/* Estilo do painel de erro quando a conversão falha. */
+.ERRO {
+    margin-top: 20px; /* espaço acima do bloco */
+    font-size: 1.1rem; /* tamanho de fonte fácil de ler */
+    font-weight: 600; /* texto em negrito */
+    background: #ff4e50; /* fundo vermelho */
+    background: linear-gradient(90deg, rgba(255, 78, 80, 1) 0%, rgba(255, 148, 148, 1) 100%); /* degradê horizontal vermelho */
+    color: #fff; /* texto branco */
+    padding: 15px; /* espaço interno */
+    border-radius: 15px; /* cantos arredondados */
+    box-shadow: rgba(255, 78, 80, 0.5) 0px 4px 15px; /* sombra vermelha suave */
+    display: none; /* escondido até o erro ocorrer */
+}
+
+/* Estilo para texto de resultado grande, usado dentro do bloco de resultado. */
+.Resultado {
+    font-size: 1.4rem;
+}
+
+/* Texto das taxas com menor destaque. */
+.Taxa {
+    font-size: 0.9rem;
+    opacity: 0.8; /* deixa o texto mais transparente */
+    margin-top: 20px; /* separação do conteúdo acima */
+}

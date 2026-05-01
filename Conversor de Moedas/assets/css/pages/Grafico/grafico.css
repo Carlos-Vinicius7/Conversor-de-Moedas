@@ -1,0 +1,52 @@
+@import url('../../global/Global.css');
+
+/* Estiliza o container principal que segura todo o conteúdo do gráfico. */
+.geral {
+    background-color: var(--fundoGeral); /* fundo branco para destacar o conteúdo */
+    border-radius: 20px; /* bordas arredondadas */
+    padding: 40px; /* espaço interno ao redor do conteúdo */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; /* sombra leve para profundidade */
+    width: 100%; /* ocupa toda a largura disponível do elemento pai */
+    max-width: 760px; /* limita a largura máxima do container */
+    min-width: 320px; /* evita que o container fique muito estreito */
+    text-align: center; /* centraliza o texto dentro do container */
+    position: relative; /* necessário para posicionamento absoluto interno, como o botão de fechar */
+}
+
+/* Estiliza o bloco que comporta o gráfico dentro da div geral. */
+.Grafico {
+    width: 100%; /* ocupa toda a largura disponível dentro de .geral */
+    height: 420px; /* altura fixa para o gráfico e o seu fundo */
+    border-radius: 10px; /* cantos arredondados no bloco do gráfico */
+    padding: 20px; /* separação entre o gráfico e as bordas do bloco */
+    background-color: #efefef; /* fundo cinza claro no painel do gráfico */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* sombra leve ao redor do bloco */
+}
+
+/* Faz o canvas do Chart.js preencher o bloco .Grafico. */
+#myChart {
+    width: 100%;
+    height: 100%;
+}
+
+/* Espaçamento abaixo do cabeçalho dentro de .geral. */
+.header {
+    margin-bottom: 30px;
+}
+
+/* Título do gráfico com zero margem extra. */
+h3 {
+    margin: 0;
+    font-size: 1.8rem; /* tamanho maior de fonte para o título */
+    color: var(--texto); /* cor do texto definida pela variável de tema */
+}
+
+/* O botão de fechar fica no canto superior esquerdo de .geral. */
+.fechar {
+    position: absolute; /* permite posicionar acima do fluxo normal */
+    top: 20px; /* afasta do topo de .geral */
+    left: 20px; /* afasta da esquerda de .geral */
+    color: var(--texto); /* cor do texto definida pela variável de tema */
+    text-decoration: none; /* remove sublinhado de link */
+    font-size: 1.5rem; /* tamanho do ícone */
+}
