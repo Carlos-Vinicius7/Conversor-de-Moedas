@@ -157,7 +157,7 @@ a {
 /* Efeito hover do link "Taxas em tempo real". */
 a:hover {
     color: var(--cor--3); /* muda para a cor principal do tema */
-    text-shadow: 0 0 8px var(--cor--4); /* brilho suave ao redor do texto */
+    text-shadow: 0 0 2px var(--cor--4); /* brilho baixinho ao redor do texto */
 }
 
 /* Painel de resultado exibido após a conversão. */
