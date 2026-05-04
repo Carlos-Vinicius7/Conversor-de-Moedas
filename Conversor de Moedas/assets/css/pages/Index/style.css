@@ -151,6 +151,13 @@ a {
     text-decoration: none;
     font-weight: 600;
     color: var(--texto); /* cor do link definida pela variável de tema */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* transição suave na mudança de cor */
+}
+
+/* Efeito hover do link "Taxas em tempo real". */
+a:hover {
+    color: var(--cor--3); /* muda para a cor principal do tema */
+    text-shadow: 0 0 8px var(--cor--4); /* brilho suave ao redor do texto */
 }
 
 /* Painel de resultado exibido após a conversão. */
