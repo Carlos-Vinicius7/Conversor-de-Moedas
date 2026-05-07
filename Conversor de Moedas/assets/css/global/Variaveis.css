@@ -7,6 +7,8 @@
    --texto:  #000000;
    --cor--7: #02c2eb;
    --fundoGeral: #ffff;
+   --glass-bg: rgba(255, 255, 255, 0.18);
+   --glass-border: rgba(255, 255, 255, 0.25);
 }
 
 body.dark-mode {
@@ -19,6 +21,8 @@ body.dark-mode {
     --texto:  #ffffff;
     --cor--7: #b3f2ff; 
     --fundoGeral: #1f2b41;
+    --glass-bg: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.16);
 }
 
 /* Corpo da página: centraliza o conteúdo e aplica o fundo degradê. */
