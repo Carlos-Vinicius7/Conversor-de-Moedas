@@ -8,7 +8,7 @@
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px; /* bordas arredondadas */
     padding: 40px; /* espaço interno ao redor do conteúdo */
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 30px; /* sombra leve para profundidade */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; /* sombra suave para profundidade */
     width: 100%; /* ocupa toda a largura disponível do elemento pai */
     max-width: 760px; /* limita a largura máxima do container */
     min-width: 320px; /* evita que o container fique muito estreito */
