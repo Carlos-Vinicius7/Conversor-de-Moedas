@@ -1,5 +1,11 @@
 # 💱 Conversor de Câmbio
 
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chart.js&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Google_Gemini-8E75B2?style=for-the-badge&logo=google&logoColor=white)
+
 Uma aplicação web moderna e responsiva para conversão de moedas em tempo real, oferecendo uma interface intuitiva e funcionalidades avançadas para acompanhamento de taxas de câmbio.
 
 ## 🚀 Sobre o Projeto
