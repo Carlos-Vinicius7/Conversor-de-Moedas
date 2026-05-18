@@ -62,12 +62,12 @@ Projeto1/                             # Raiz do repositório
 
 ## 💻 Como Usar
 
-1. Insira o valor que deseja converter no campo **Valor**.
-2. Selecione a moeda de origem (Moeda I).
-3. Selecione a moeda de destino (Moeda II).
-4. Clique no botão **Converter**.
-5. O resultado aparecerá instantaneamente na tela, junto com a taxa de câmbio aplicada.
-6. Clique em **Taxas em tempo real** para visualizar o gráfico comparativo entre as moedas selecionadas.
+1. 💰Insira o valor que deseja converter no campo **Valor**.
+2. 💵Selecione a moeda de origem (Moeda I).
+3. 💷Selecione a moeda de destino (Moeda II).
+4. 💱Clique no botão **Converter**.
+5. ✅O resultado aparecerá instantaneamente na tela, junto com a taxa de câmbio aplicada.
+6. 📊Clique em **Taxas em tempo real** para visualizar o gráfico comparativo entre as moedas selecionadas.
 
 ---
 Desenvolvido como parte de um projeto de aprendizado em desenvolvimento web.
