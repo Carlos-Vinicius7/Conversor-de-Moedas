@@ -14,10 +14,10 @@ Este projeto é um **Conversor de Câmbio** que permite aos usuários converter 
 
 ## ✨ Funcionalidades
 
--🗓️ **Conversão em Tempo Real:** Conversão instantânea de valores utilizando taxas de câmbio atualizadas.
--🪙 **Diversas Moedas:** Suporte para as principais moedas do mundo, incluindo Real (BRL), Dólar (USD), Euro (EUR) e mais.
--🌆 **Modo Escuro/Claro:** Interface adaptável com alternância de tema para melhor conforto visual.
--📊 **Gráficos Interativos:** Visualização de dados históricos e taxas em tempo real através de gráficos dinâmicos.
+- 🗓️ **Conversão em Tempo Real:** Conversão instantânea de valores utilizando taxas de câmbio atualizadas.
+- 🪙 **Diversas Moedas:** Suporte para as principais moedas do mundo, incluindo Real (BRL), Dólar (USD), Euro (EUR) e mais.
+- 🌆 **Modo Escuro/Claro:** Interface adaptável com alternância de tema para melhor conforto visual.
+- 📊 **Gráficos Interativos:** Visualização de dados históricos e taxas em tempo real através de gráficos dinâmicos.
 
 ## 🛠️ Tecnologias Utilizadas
 
