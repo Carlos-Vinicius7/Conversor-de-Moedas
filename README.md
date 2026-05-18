@@ -19,15 +19,6 @@ Este projeto é um **Conversor de Câmbio** que permite aos usuários converter 
 - **Modo Escuro/Claro:** Interface adaptável com alternância de tema para melhor conforto visual.
 - **Gráficos Interativos:** Visualização de dados históricos e taxas em tempo real através de gráficos dinâmicos.
 
-## 🛠️ Tecnologias Utilizadas
-
-- **HTML5:** Estrutura semântica da aplicação.
-- **CSS3:** Estilização personalizada, incluindo animações e design responsivo.
-- **JavaScript (Vanilla):** Lógica da aplicação, manipulação do DOM e consumo de API.
-- **[ExchangeRate-API](https://www.exchangerate-api.com/):** API utilizada para obter as taxas de câmbio em tempo real.
-- **[Chart.js](https://www.chartjs.org/):** Biblioteca utilizada para a renderização dos gráficos de câmbio.
-- **[Boxicons](https://boxicons.com/):** Conjunto de ícones modernos e minimalistas.
-
 ## 📂 Estrutura do Projeto
 
 - `index.html`: Página principal com o formulário de conversão.
