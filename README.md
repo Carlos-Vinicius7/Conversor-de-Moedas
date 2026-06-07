@@ -69,7 +69,7 @@ Projeto1/                             # Raiz do repositório
 5. ✅O resultado aparecerá instantaneamente na tela, junto com a taxa de câmbio aplicada.
 6. 📊Clique em **Taxas em tempo real** para visualizar o gráfico comparativo entre as moedas selecionadas.
 
-🌐. https://conversor-de-moedas-three-kappa.vercel.app/
+7. 🌐. https://conversor-de-moedas-three-kappa.vercel.app/
 
 ---
 Desenvolvido como parte de um projeto de aprendizado em desenvolvimento web.
